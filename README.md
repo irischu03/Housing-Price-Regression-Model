@@ -11,7 +11,7 @@ There are evidences of moderate multicollinearity. Collinearity between X1 and X
 
 ![scatterplot matrix](https://user-images.githubusercontent.com/72762392/96947504-5e5f4180-14b1-11eb-99b1-1e57bc44b10a.jpg)
 
-## Testing Different Models
+## Building Regression Models
 ### Selling Price & Living Area
 The numeric variable with the second highest correlation with Selling Price is  Living Area. This is reasonable; big houses are generally more expensive.
 ![scatterplot with line](https://user-images.githubusercontent.com/72762392/97016101-5687b780-151a-11eb-9e49-fdedd9e70804.jpg)
@@ -27,3 +27,11 @@ There are simple transformations of Y and X. I used Log price and Square price t
 Because these two linear lines are overlapped, the slopes are different and there are interaction effects, so the interaction term X1X2 should be included to determine the effect between each variable.
 
 ![interaction1](https://user-images.githubusercontent.com/72762392/97019451-5689b680-151e-11eb-96e8-0adfbfb11dbc.png)
+ANOVA table is showed as below, indicating that we should include interaction term.
+![interaction3](https://user-images.githubusercontent.com/72762392/97020060-1840c700-151f-11eb-8e82-543fb8f543c7.png)
+
+### Best Subset Selection
+First, we begin with the model that contains all 11 X variables. Based on the backward elimination approach, the best subset of variables includes Waterfront, Land Value, New Construction, Living area, Central air conditioning, number of Bedrooms and number of Rooms. 
+
+![approach](https://user-images.githubusercontent.com/72762392/97020223-48886580-151f-11eb-9c41-c19cde46658f.png)
+![approach2](https://user-images.githubusercontent.com/72762392/97020251-4f16dd00-151f-11eb-8881-f09a941b2c44.png)
