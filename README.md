@@ -11,4 +11,9 @@ There are evidences of moderate multicollinearity. Collinearity between X1 and X
 
 ![scatterplot matrix](https://user-images.githubusercontent.com/72762392/96947504-5e5f4180-14b1-11eb-99b1-1e57bc44b10a.jpg)
 
+## Testing Different Models
+### Selling Price & Living Area
+The numeric variable with the second highest correlation with Selling Price is  Living Area. This is reasonable; big houses are generally more expensive.
+![scatterplot with line](https://user-images.githubusercontent.com/72762392/97016101-5687b780-151a-11eb-9e49-fdedd9e70804.jpg)
+
 
