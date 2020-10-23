@@ -1,4 +1,4 @@
-setwd("D:/Baruch/STA 9700/Project")
+setwd("D:/Project")
 
 # Data
 real_estate=read.csv("real_estate.csv")
