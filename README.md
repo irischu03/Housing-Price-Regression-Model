@@ -9,8 +9,7 @@ The project aims at building a linear model to predict the selling price using a
 The scatter plot matrix and the correlation matrix show that there exists a strong positive linear relationship between Y (selling price) and X1 (living area), and a weak positive linear relationship between Y and X2 (number of bedrooms), also Y and X3 (number of fireplaces). 
 There are evidences of moderate multicollinearity. Collinearity between X1 and X2 is moderate. We can also tell that there exists weak collinearity between X2 and X3, X1 and X3.
 
-![scatterplot matrix](https://user-images.githubusercontent.com/72762392/96947504-5e5f4180-14b1-11eb-99b1-1e57bc44b10a.jpg)
-
+<div  align="center"><img src="https://user-images.githubusercontent.com/72762392/96947504-5e5f4180-14b1-11eb-99b1-1e57bc44b10a.jpg" width="80%" height="80%">/div>
 ## Building Regression Models
 ### Selling Price & Living Area
 The numeric variable with the second highest correlation with Selling Price is  Living Area. This is reasonable; big houses are generally more expensive.
