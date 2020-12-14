@@ -13,19 +13,21 @@ There are evidences of moderate multicollinearity. Collinearity between X1 and X
 ## Building Regression Models
 ### Selling Price & Living Area
 The numeric variable with the second highest correlation with Selling Price is  Living Area. This is reasonable; big houses are generally more expensive.
-![scatterplot with line](https://user-images.githubusercontent.com/72762392/97016101-5687b780-151a-11eb-9e49-fdedd9e70804.jpg)
+
+<div  align="center"><img src="https://user-images.githubusercontent.com/72762392/97016101-5687b780-151a-11eb-9e49-fdedd9e70804.jpg" width="80%" height="80%">/div>
 According to the semi-studentized residuals plot, we can see there’re outliers. The skewed shape indicates nonnormality. 
 ![residual1](https://user-images.githubusercontent.com/72762392/97018346-0cec9c00-151d-11eb-94c7-858af7db020e.jpg)
 ![residual2](https://user-images.githubusercontent.com/72762392/97018380-1413aa00-151d-11eb-8773-d5fbb9d63aa6.jpg)
 
 There are simple transformations of Y and X. I used Log price and Square price to transform on Y and Log living area and Square living area to transform on X separately. From the results of QQ plot, we can find that Log living area will make the linear model more appreciate.
-![logx1](https://user-images.githubusercontent.com/72762392/97018837-9b611d80-151d-11eb-9007-2e8b38b4224b.jpg)
-![logx2](https://user-images.githubusercontent.com/72762392/97018872-a320c200-151d-11eb-9ef6-762ef8025223.jpg)
-
+<div  align="center"><img src="https://user-images.githubusercontent.com/72762392/97018837-9b611d80-151d-11eb-9007-2e8b38b4224b.jpg" width="80%" height="80%">/div>
+<div  align="center"><img src="https://user-images.githubusercontent.com/72762392/97018872-a320c200-151d-11eb-9ef6-762ef8025223.jpg" width="90%" height="90%">/div>
+  
 ### Interaction Effect
 Because these two linear lines are overlapped, the slopes are different and there are interaction effects, so the interaction term X1X2 should be included to determine the effect between each variable.
 
-![interaction1](https://user-images.githubusercontent.com/72762392/97019451-5689b680-151e-11eb-96e8-0adfbfb11dbc.png)
+<div  align="center"><img src="https://user-images.githubusercontent.com/72762392/97019451-5689b680-151e-11eb-96e8-0adfbfb11dbc.png" width="80%" height="80%">/div>
+
 ANOVA table is showed as below, indicating that we should include interaction term.
 ![interaction3](https://user-images.githubusercontent.com/72762392/97020060-1840c700-151f-11eb-8e82-543fb8f543c7.png)
 
